@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+    <title>Friend Finder Survey</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h2>Survey Questions</h2>
+      <hr>
+      <div class="row">
+        <div class="col-lg-6">
+      <form>
+          <div class="form-group">
+              <label for="name">Your Name (Required)</label>
+              <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Enter your first name.">
+        </div>
+        <div class="form-group">
+              <label for="picture">Link to Photo of You (Required)</label>
+              <input type="text" class="form-control" id="picture" aria-describedby="emailHelp" placeholder="Enter link to a photo of you.">
+              <small id="emailHelp" class="form-text text-muted">Either a JPG or a PNG file will suffice.</small>
+        </div>
+        <hr>
+        <h4> Questions About You: </h4>
+        <div class="form-group">
+              <label for="exampleSelect1">Question #1</label>
+              <h5>I am a morning person who doesn't know where the snooze button on my alarm clock is.</h5>
+              <select class="form-control" id="ques1">
+	 		          <option value=""></option>
+                <option>1 - Good god, no, not me.</option>
+                <option>2</option>
+                <option>3 - *shrugging* Could be me, or not.</option>
+                <option>4</option>
+                <option>5 - Yes, this is TOTALLY me.</option>
+            </select>
+        </div>
+        <div class="form-group">
+              <label for="exampleSelect1">Question #2</label>
+              <h5>I love being around people all the time.</h5>
+              <select class="form-control" id="ques2">
+	 		          <option value=""></option>
+                <option>1 - Good god, no, not me.</option>
+                <option>2</option>
+                <option>3 - *shrugging* Could be me, or not.</option>
+                <option>4</option>
+                <option>5 - Yes, this is TOTALLY me.</option>
+            </select>
+        </div>
+        <div class="form-group">
+              <label for="exampleSelect1">Question #3</label>
+              <h5>My weekends consists of Netflix binges - alone.</h5>
+              <select class="form-control" id="ques3">
+	 		          <option value=""></option>
+                <option>1 - Good god, no, not me.</option>
+                <option>2</option>
+                <option>3 - *shrugging* Could be me, or not.</option>
+                <option>4</option>
+                <option>5 - Yes, this is TOTALLY me.</option>
+            </select>
+        </div>
+        <!-- <div class="form-group">
+              <label for="exampleSelect1">Question #4</label>
+              <h5>I make every effort to vote in almost all elections.</h5>
+              <select class="form-control" id="ques4">
+	 		          <option value=""></option>
+                <option>1 - Good god, no, not me.</option>
+                <option>2</option>
+                <option>3 - *shrugging* Could be me, or not.</option>
+                <option>4</option>
+                <option>5 - Yes, this is TOTALLY me.</option>
+            </select>
+        </div>
+        <div class="form-group">
+              <label for="exampleSelect1">Question #5</label>
+              <h5>I keep track of my finances - hello spreadsheets or money tracking apps!</h5>
+              <select class="form-control" id="ques5">
+	 		          <option value=""></option>
+                <option>1 - Good god, no, not me.</option>
+                <option>2</option>
+                <option>3 - *shrugging* Could be me, or not.</option>
+                <option>4</option>
+                <option>5 - Yes, this is TOTALLY me.</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+              <label for="exampleSelect1">Question #6</label>
+              <select class="form-control" id="ques6">
+	 		          <option value=""></option>
+                <option>1 - Good god, no, not me.</option>
+                <option>2</option>
+                <option>3 - *shrugging* Could be me, or not.</option>
+                <option>4</option>
+                <option>5 - Yes, this is TOTALLY me.</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+              <label for="exampleSelect1">Question #7</label>
+              <select class="form-control" id="ques7">
+	 		          <option value=""></option>
+                <option>1 - Good god, no, not me.</option>
+                <option>2</option>
+                <option>3 - *shrugging* Could be me, or not.</option>
+                <option>4</option>
+                <option>5 - Yes, this is TOTALLY me.</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+              <label for="exampleSelect1">Question #8</label>
+              <select class="form-control" id="ques8">
+	 		          <option value=""></option>
+                <option>1 - Good god, no, not me.</option>
+                <option>2</option>
+                <option>3 - *shrugging* Could be me, or not.</option>
+                <option>4</option>
+                <option>5 - Yes, this is TOTALLY me.</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+              <label for="exampleSelect1">Question #9</label>
+              <select class="form-control" id="ques9">
+	 		          <option value=""></option>
+                <option>1 - Good god, no, not me.</option>
+                <option>2</option>
+                <option>3 - *shrugging* Could be me, or not.</option>
+                <option>4</option>
+                <option>5 - Yes, this is TOTALLY me.</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+              <label for="exampleSelect1">Question #10</label>
+              <select class="form-control" id="ques10">
+                <option value=""></option>
+                <option>1 - Good god, no, not me.</option>
+                <option>2</option>
+                <option>3 - *shrugging* Could be me, or not.</option>
+                <option>4</option>
+                <option>5 - Yes, this is TOTALLY me.</option>
+            </select>
+        </div> -->
+        <div>
+          <button type="submit" class="btn btn-primary btn-md" id="add-btn"><span class="glyphicon glyphicon-fire"></span> Find Me a Friend!</button>
+        </div>
+      </form>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-lg-6">
+      </div>
+   </div>
+
+
+      <footer class="footer">
+        <p>&copy; Jenna Ezis King</p>
+      </footer>
+
+    </div>
+  <script type="text/javascript">
+
+  $("#add-btn").on("click", function(event) {
+    event.preventDefault();
+    var newFriend = {
+      name: $("#name").val().trim(),
+      picture: $("#picture").val().trim(),
+      score: [
+              parseInt($("#ques1").val(),10),
+              parseInt($("#ques2").val(),10),
+              parseInt($("#ques3").val(),10),
+             ];
+    };
+      // name: $("#name").val().trim(),
+      // picture: $("#picture").val().trim(),
+      // ques1: parseInt($("#ques1").val().trim(),10),
+      // ques2: parseInt($("#ques2").val().trim(),10),
+      // ques3: parseInt($("#ques3").val().trim(),10)
+      // ques4: $("#ques4").val().trim(),
+      // ques5: $("#ques5").val().trim(),
+      // ques6: $("#ques6").val().trim(),
+      // ques7: $("#ques7").val().trim(),
+      // ques8: $("#ques8").val().trim(),
+      // ques9: $("#ques9").val().trim(),
+      // ques10: $("#ques10").val().trim()
+
+    // Post to API
+    $.post("/api/friends", newFriend)
+        .done(function(data) {
+          console.log(data);
+          alert("Adding friend data...");
+    });
+  });
+</script>
+  </body>
+</html>
